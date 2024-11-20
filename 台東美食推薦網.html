@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台東特色介紹</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+
+        header {
+            background: #def8de;
+            color: BLACK;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: BLACK;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+ 
+        section {
+            padding: 2rem;
+            text-align: center;
+            background: white;
+            margin: 1rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-list {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .food-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .food-card:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+        }
+
+        .food-card img {
+            width: 100%;
+            border-bottom: 3px solid #5cc14f;
+        }
+
+        .food-card h3 {
+            margin: 0.5rem 0;
+            color: #5cc14f;
+        }
+
+        .food-card p {
+            padding: 0 1rem 1rem;
+            margin: 0;
+        }
+
+        .address {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 0.7rem;
+            background: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+          form button:hover {
+            background: #e65a4f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>台東美食推薦</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">關於台東</a></li>
+                <li><a href="#foods">美食列表</a></li>
+                <li><a href="#travel">景點列表</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <section id="about">
+    <h2>關於台東</h2>
+    <p>台東位於台灣東部，擁有廣闊的自然景觀與豐富的人文風情。這裡有金黃稻田的鄉村風光、湛藍的海洋景色，以及山脈與平原的完美結合。</p>
+    <p>主要景點包括三仙台、池上稻田和綠島，讓人流連忘返。此外，台東還以豐富的原住民文化、熱氣球嘉年華和多樣化的美食而聞名。</p>
+    <p>來到台東，您可以品嚐當地盛產的釋迦果，或是享受自然中衝浪與騎行的樂趣。無論是美景還是文化，台東都將帶給您難忘的體驗。</p>
+</section>
+
+
+        <section id="foods">
+            <h2>美食推薦</h2>
+            <div class="food-list">
+                <div class="food-card">
+                    <img src="https://www.wu-tau.com/data/product_intro/cover/1583202268932967026.png" alt="池上便當">
+                    <h3>池上便當</h3>
+                    <p>池上便當經典木片盒，裡頭裝著滿滿的肉菜飯！使用台東當地的米飯和新鮮食材製成，樸實卻讓人回味無窮。</p>
+                    <p class="address">地址： 950台東縣台東市中興路四段448號</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://lh3.googleusercontent.com/pJd2N-mH0tcqEoLay6BUZnvgr059jJt-TvmqFlWhDhc9KfdJAIh6MVOx5gqAch_ZxBi-PxqlWl-KtI5pFwyIoPwziTuMYtQ=s600" alt="東河包子">
+                    <h3>東河包子</h3>
+                    <p>包子、饅頭通通有，口味眾多，價位從15~45元不等，另外也有飲品、冰棒，選擇還不少，最受歡迎的肉包吃起來鹹中帶甜、口味適中，另外值得推薦的是粒粒分明的芝麻包，也是很特別，值得一吃!</p>
+                    <p class="address">地址： 959台東縣東河鄉南東河15鄰420號</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://img.bigfang.tw/2022/09/1663405104-edab7ba7e203cd7576d1200465194ea8.jpg" alt="葉氏海鮮">
+                    <h3>葉氏海鮮</h3>                   
+                    <p>來到台東，一定要來不少吃貨推薦必訪的鮮美厚切生魚片名店的「葉氏海鮮 Yeh‘s Fish」，主要提供旗魚、鮭魚、鮪魚為主的生魚片CP值高到爆炸啊～愛吃生魚片的朋友來台東必訪啊～</p>
+                    <p class="address">地址： 950台東縣台東市強國街211號</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://after-sleep.com/wp-content/uploads/2022/03/2%EF%BC%88%E9%83%BD%E8%98%AD%E6%B5%B7%E8%A7%92%E5%92%96%E5%95%A1%EF%BC%89-1024x768.jpg" alt="都蘭海角咖啡">
+                    <h3>都蘭海角咖啡</h3>                   
+                    <p>都蘭海角咖啡是台東超熱門的景觀咖啡廳，也是人氣的打卡景點。擁有寬闊的草皮、無敵海景與壯麗山景，還有露天泳池可以玩水！泳池旁還有設置飲料吧，超級享受！主要用餐區位於入口處貨櫃屋，提供各式異國料理簡餐及飲料、咖啡；餐點份量雖然沒有非常充足，但用料細心，味道也很棒！多人來訪的話則有兩人、四人及六人套餐可以選擇。</p>
+                    <p class="address">地址：959台東縣東河鄉47鄰14-10號</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://pic.pimg.tw/kenwhitney/1572498945-3964167258_wn.jpg" alt="黃記蔥油餅">
+                    <h3>黃記蔥油餅</h3>                   
+                    <p>黃記蔥油餅就位在台東濱海公園旁，熱騰騰的蔥油餅又酥又香，有不加蛋、加蛋與雙蛋三種選擇。其中九層塔雙蛋蔥油餅更是必點品項，滿滿的蔥花加上爆香過後的九層塔，加入到酥脆的蔥油餅中，最後再刷上醬汁，非常美味的台式小吃美食。買完還能到旁邊的台東濱海公園，看著海景享用美食！</p>
+                    <p class="address">950台東縣台東市南海路36號</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://fupo.tw/wp-content/uploads/2022/06/%E5%AF%B6%E6%A1%91%E8%B1%86%E8%8A%B1%E5%BA%97-02512.jpg" alt="寶桑豆花">
+                    <h3>寶桑豆花</h3>                   
+                    <p>寶桑豆花原創立於民國六十八年間，剛開始也是於寶桑路一帶營業，後於民國九十九年十二月八日遷至現址。簡單的材料，孕育出富有深度的滋味，淺嚐一口豆花，入口瞬間豆香四溢，綿柔入口即化的口感，令人回味無窮。</p>
+                    <p class="address"> 臺東縣臺東市正氣路115號 </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel">
+            <h2>景點推薦</h2>
+            <div class="food-list">
+                <div class="food-card">
+                    <img src="https://blog.tripbaa.com/wp-content/uploads/2019/03/%E5%8F%B0%E6%9D%B1%E9%90%B5%E8%8A%B1%E6%9D%91-Readygo.jpg" alt="鐵花村">
+                    <h3>鐵花村</h3>
+                    <p>鐵花村主要有「音樂聚落」、「鐵花小舖」、「假日慢市集」等三大主軸，皆環繞著台東在地文化的主題，如：東台灣音樂人或國內外優秀表演者的舞台、融合台東各鄉鎮名產的飲品、原住民特色手工藝品、台東在地農特產品等，而獨具魅力地呈現出隨性、自然不做作的氛圍，吸引旅人們駐足於此。</p>
+                    <p class="address">地址： 950台東縣台東市新生路135巷26號</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://mimihan.tw/wp-content/uploads/20200902134253_37.jpg" alt="星星部落">
+                    <h3>星星部落</h3>
+                    <p>到台東旅遊晚上推薦安排來星星部落，站在星星部落景觀咖啡的草地上，180度台東夜景盡收眼底，還能看到台東機場的飛機起降，視野完全無遮擋，天氣好的話在星星部落抬頭就是滿天星斗</p>
+                    <p class="address">地址： 台東縣卑南鄉富源村8鄰116之3號</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://www.lookit.tw/upload/VG/aHO/bdac52e02cd54912ab70ac4287080786.jpg" alt="多良車站">
+                    <h3>多良車站</h3>                   
+                    <p>位於南迴公路半山腰上的多良車站，原本是排灣族「打腊打蘭社」所在地，日治時期更名為「多多良」，在南迴鐵路建設後則簡化名稱為「多良」。雖然自2006年起因載客量不高而終止了列車停靠。多良車站仍以其靠山面海的絕佳地理景色，被譽為台灣最美的車站</p>
+                    <p class="address">地址：  臺東縣太麻里鄉多良村瀧溪路8-1號</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://www.eastcoast-nsa.gov.tw/image/72384/1024x768" alt="三仙台">
+                    <h3>三仙台</h3>                   
+                    <p>位於台東縣成功鎮東北方的三仙台，由離岸小島和珊瑚礁海岸所構成，其中有三塊巨大的岩石，傳說呂洞賓、李鐵拐、何仙姑曾登臨此島，因而得名，三仙台島的地質屬於都巒山集塊岩，原是一處岬角，因海水侵蝕逐漸斷了岬角頸部，而成了離岸島。</p>
+                </div>
+                <div class="food-card">
+                    <img src="https://tour.taitung.gov.tw/image/34309/1024x768" alt="初鹿牧場">
+                    <h3>初鹿牧場</h3>                   
+                    <p>初鹿牧場是全臺灣最大的坡地型牧場，成群乳牛悠閒的在如茵草原上漫步，雪白的圍欄、朱紅的房，在蔚藍天空和柔軟白雲襯托下，彷彿如詩如畫的歐洲莊園，讓人陶醉不己。初鹿牧場除了乳牛之外，也引進了寵物馬、四角羊、兔子和孔雀等動物，讓旅客能近距離接觸更多動物，可以親手拿著新鮮牧草餵食乳牛，還能體驗DIY手作體驗的樂趣。初鹿牧場以新鮮生乳製作各式各樣香濃的鮮乳食品，有鮮乳冰淇淋、鮮奶饅頭、奶酪、薄脆餅乾等等，更是臺東最佳的伴手禮之一</p>
+                    <p class="address"> 地址: 954台東縣卑南鄉牧場1號</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
