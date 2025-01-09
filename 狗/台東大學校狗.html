@@ -31,6 +31,7 @@
             margin: 0.5em 0 0;
         }
 
+        /* 分頁導航 */
         nav .pagination {
             display: flex;
             justify-content: center;
@@ -58,6 +59,7 @@
             color: #fff;
         }
 
+        /* 狗狗資料 */
         main {
             padding: 2em 1em;
             text-align: center;
@@ -113,6 +115,7 @@
             margin-top: 2em;
         }
 
+        /* 動態效果 */
         section {
             display: none;
             animation: fadeIn 0.5s ease-out;
@@ -151,23 +154,23 @@
         <p>認識我們可愛的校園狗狗朋友！</p>
     </header>
     <main>
-        <section id="屁孩" class="dog-page">
+        <section id="page1" class="dog-page">
             <h2>屁孩</h2>
-            <img src="屁孩.jpg" alt="屁孩的照片" class="dog-photo">
+            <img src="屁孩.jpg" alt="狗狗1的照片" class="dog-photo">
             <table>
                 <tr><th>特徵</th><td>黑棕色、公</td></tr>
                 <tr><th>年紀</th><td>10歲</td></tr>
                 <tr><th>個性</th><td>活潑好動、親人</td></tr>
             </table>
         </section>
-        <section id="小乖" class="dog-page">
+        <section id="page2" class="dog-page">
             <h2>小乖</h2>
-            <img src="小乖.jpg" alt="小乖的照片" class="dog-photo">
+            <img src="小乖.jpg" alt="狗狗2的照片" class="dog-photo">
             <table>
                 <tr><th>特徵</th><td>底黃色背黑/中型
 短毛/垂耳
 母</td></tr>
-                <tr><th>年紀</th><td>12歲</td></tr>
+                <tr><th>年紀</th><td>4歲</td></tr>
                 <tr><th>個性</th><td>算是親人，但是比較
 隨性，不會刻意討好
 別人，但是給摸，別
@@ -175,14 +178,14 @@
 會，比較固執。</td></tr>
             </table>
         </section>
-        <section id="小花" class="dog-page">
+        <section id="page3" class="dog-page">
             <h2>小花</h2>
             <img src="小花.jpg" alt="狗狗3的照片" class="dog-photo">
             <table>
                <tr><th>特徵</th><td>虎皮肚白/中型
 短毛/立耳
 母</td></tr>
-                <tr><th>年紀</th><td>16歲</td></tr>
+                <tr><th>年紀</th><td>8歲</td></tr>
                 <tr><th>個性</th><td>因為年紀大了所以
 反應很慢，吃飯也很
 慢，很親人，喜歡別
@@ -192,7 +195,7 @@
 </td></tr>
             </table>
         </section>
-        <section id="二號" class="dog-page">
+        <section id="page4" class="dog-page">
             <h2>二號</h2>
             <img src="虎皮.jpg" alt="狗狗4的照片" class="dog-photo">
             <table>
@@ -208,14 +211,14 @@
 望。</td></tr>
             </table>
         </section>
-        <section id="小黑" class="dog-page">
+        <section id="page5" class="dog-page">
             <h2>小黑</h2>
             <img src="小黑.jpg" alt="狗狗5的照片" class="dog-photo">
             <table>
             <tr><th>特徵</th><td>黑色/中型(胖)
 短毛/立耳
 母</td></tr>
-                <tr><th>年紀</th><td>11歲</td></tr>
+                <tr><th>年紀</th><td>3歲</td></tr>
                 <tr><th>個性</th><td>算是親人，但是個性
 比較膽小，如果受到
 驚嚇會夾著尾巴逃
@@ -225,7 +228,7 @@
 胖。</td></tr>
             </table>
         </section>
-        <section id="皮蛋" class="dog-page">
+        <section id="page6" class="dog-page">
             <h2>皮蛋</h2>
             <img src="皮蛋.jpg" alt="狗狗6的照片" class="dog-photo">
             <table>
@@ -244,12 +247,12 @@
     </main>
     <nav>
         <ul class="pagination">
-            <li><a href="javascript:void(0)" onclick="showPage(屁孩)">1</a></li>
-            <li><a href="javascript:void(0)" onclick="showPage(小乖)">小2</a></li>
-            <li><a href="javascript:void(0)" onclick="showPage(小花)">小花</a></li>
-            <li><a href="javascript:void(0)" onclick="showPage(二號)">二號</a></li>
-            <li><a href="javascript:void(0)" onclick="showPage(小黑)">小黑</a></li>
-            <li><a href="javascript:void(0)" onclick="showPage(皮蛋)">皮蛋</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage(1)">1</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage(2)">2</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage(3)">3</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage(4)">4</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage(5)">5</a></li>
+            <li><a href="javascript:void(0)" onclick="showPage(6)">6</a></li>
         </ul>
     </nav>
   
